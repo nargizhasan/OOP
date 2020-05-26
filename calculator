@@ -28,7 +28,7 @@ while choice!=0:
     elif choice==3:
         print("Result: ",obj.mul())
     elif choice==4:
-        print("Result: ",round(obj.div())
+        print("Result: ",(obj.div())
     elif choice==5:
         print("Exited")
     else:
