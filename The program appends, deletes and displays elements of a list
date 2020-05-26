@@ -1,0 +1,31 @@
+class check():
+    def __init__(self):
+        self.c=[]
+    def add(self,a):
+        return self.c.append(a)
+    def remove(self,b):
+        self.c.remove(b)
+    def dis(self):
+        return (self.c)
+obj=check()
+choice=1
+while choice!=0:
+    print("0. Exit")
+    print("1. Add")
+    print("2. Delete")
+    print("3. Display")
+    choice=int(input("Enter choice: "))
+    if choice==1:
+        c=int(input("Type number to append: "))
+        obj.add(c)
+        print("List: ",obj.dis())
+    elif choice==2:
+        c=int(input("Type number to remove: "))
+        obj.remove(c)
+        print("List: ",obj.dis())
+    elif choice==3:
+        print("List: ",obj.dis())
+    elif choice==0:
+        print("Exited")
+    else:
+        print("Invalid choice.")
